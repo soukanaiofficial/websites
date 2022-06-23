@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<html lang="ja">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sou Kanai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e78ec35bbf.js" crossorigin="anonymous"></script>
+	</head>
+
+<body>
+
+<!-- ナビゲーションバーメニュー＆ハンバーガーメニュー -->
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon">
+		</span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+		<ul class="navbar-nav">
+
+			<li class="nav-item">
+			  <a class="nav-link text-light" href="home.php">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>HOME
+			  </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="about.php">
+				  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 20 20">
+            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z"/>
+          </svg>ABOUT
+			   </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="works.php">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 20 20">
+            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+           </svg>WORKS
+				</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="contact.php">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-square-text-fill" viewBox="0 0 20 20">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+          </svg>CONTACT
+				</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    
+<div class="space"></div>
+
+<!-- 動画背景＆オーバーレイテキスト -->
+
+<section class="hero">
+
+	<div class="video-box overlay">
+
+		<video class="video" muted autoplay loop playsinline>
+			<source src="img\video.mp4" type="video/mp4">
+		</video>
+
+	</div>
+
+	<div class="text-box">
+
+		<h1 class="overlaytext">SOU KANAI</h1>
+		<p class="titlename">MUSIC PRODUCER | VIDEO EDITOR</p>
+
+	</div>
+
+</section>
+
+<!-- ホームメニュー -->
+    
+<div id="home" class="my-3">
+
+	<h1 class="menutitle">
+		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 20 20">
+			<path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+		</svg>HOME
+	</h1>
+
+</div>
+
+<!-- 最新作品 -->
+
+
+<div class="container px-5">
+
+	<h2 class="text-center">ISOLATED FRAMES LOGO</h2>
+	<div class="iflogoimg">
+
+		<img src="img\isolatedframeslogo_black.png" alt="" width="300" height="300"><img src="img\isolatedframeslogo_white.png" alt="" width="300" height="300"><br><br> 
+	</div>
+
+	<p class="iflogotext">Adobe Illustrator CC 2020<br>
+ Adobe After Effects CC 2020 (Magic Bullet Looks)
+</p>
+
+</div>
+
+<div class="container px-5">
+
+	<h2 class="text-center">SOU KANAI SCATTER</h2>
+	<a href="https://soukanaiofficial.gumroad.com/l/wqjmu"><img src="img\soukanaiscatter.png" alt="" width="300" height="300">
+	</a><br><br>
+	<p>“Sou Kanai Scatter” makes it possible to randomly duplicate and array selected layers with functions to randomize their properties in the composition.<br><br>
+        Functions:<br><br>
+            Size Random (0-100%)<br>
+            Rotation (Z) Random (0-360°)<br>
+            Opacity Random (0-100%)<br>
+            Scatter Amount (0-100)<br><br>
+            To run “Sou Kanai Scatter”, please go to Adobe After Effects > Preferences > General, check on “Allow Scripts to Write Files and Access Network”, go to Scripts > Run Script File, and open “Sou Kanai Scatter.jsx”.<br><br>The script version is regularly updated.
+	</p>
+
+</div>
+
+
+
+<div class="container px-5">
+	<div class="my-3">
+		<center>
+			<i class="fa-brands fa-twitter fa-3x fa-fw"></i>
+			<a href="https://www.facebook.com/soukanaiofficial" style="color:#343a40"><i class="fa-brands fa-facebook-square fa-3x fa-fw"></i></a>
+			<a href="https://soundcloud.com/soukanaiofficial" style="color:#343a40"><i class="fa-brands fa-soundcloud fa-3x fa-fw"></i></a>
+			<a href="https://instagram.com/skanaiofficial" style="color:#343a40"><i class="fa-brands fa-3x fa-instagram-square fa-fw"></i></a>
+	  </center>
+  </div>
+</div>
+
+<footer class="bg-dark text-center text-lg-start">
+
+  <div class="text-center p-3">
+
+    <a class="text-light">COPYRIGHT © SOU KANAI 2020</a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
